@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline
-dataset = pd.read_csv("D:/Datasets/bill_authentication.csv")
+dataset = pd.read_csv('billauthentication.csv')
 #Data analysis
 dataset.shape
 dataset.head()
@@ -24,13 +24,15 @@ from sklearn.metrics import classification_report, confusion_matrix
 print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
+########################################################################
+########################################################################
 
 #Decision tree for regression
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline
-dataset = pd.read_csv('D:\Datasets\petrol_consumption.csv')
+dataset = pd.read_csv('petrol_consumption.csv')
 dataset.head()
 dataset.describe()
 X = dataset.drop('Petrol_Consumption', axis=1)
@@ -47,4 +49,3 @@ from sklearn import metrics
 print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))
 print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
-
